@@ -1,0 +1,15 @@
+current directory: /Users/nika/taskleaf/vendor/cache/ruby/2.3.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/nika/.anyenv/envs/rbenv/versions/2.3.7/bin/ruby -I /Users/nika/.anyenv/envs/rbenv/versions/2.3.7/lib/ruby/site_ruby/2.3.0 -r ./siteconf20190622-78166-1lcxl23.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nika/taskleaf/vendor/cache/ruby/2.3.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/nika/taskleaf/vendor/cache/ruby/2.3.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/nika/taskleaf/vendor/cache/ruby/2.3.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190622-78166-chps21/skiptrace
