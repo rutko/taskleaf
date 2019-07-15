@@ -19,7 +19,15 @@ class TasksController < ApplicationController
     redirect_to tasks_url, notice: "タスク「#{task.name}」を登録しました。"
   end
 
-  def edit; end
+  def edit
+    @task = Task.find(params[:id])
+  end
+
+  def update
+    task = Task.find(params[:id])
+    task.update!(task_params)
+    redirect_to task_url, notice: "タスク「#{task.name}」を更新しました"
+  end
 end
 private
 def task_params
