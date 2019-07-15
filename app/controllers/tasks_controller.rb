@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 # Task App
 class TasksController < ApplicationController
-  def index; end
+  def index
+    @tasks = Task.all
+  end
 
   def show; end
 
