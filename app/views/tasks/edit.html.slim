@@ -8,4 +8,5 @@ h1 タスクの編集
     = f.text_field :name, class: 'from-control', id:'task_name'
   .form_group
     = f.label :description
-    = f.text_area :description, rows: 5, class: 'from-control', id:'task_name'
+    = f.text_area :description, rows: 5, class: 'from-control', id:'task_description'
+  = f.submit nil, class: 'btn btn-primary'
