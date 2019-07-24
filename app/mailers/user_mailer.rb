@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Send E-mail Action
 class UserMailer < ApplicationMailer
   default from: 'notifications@example.com'
 
