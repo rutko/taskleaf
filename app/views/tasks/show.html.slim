@@ -10,6 +10,9 @@ table.table.table-hover
     th = Task.human_attribute_name(:name)
     th = @task.name
   tr
+    th = Task.human_attribute_name(:user_id)
+    th = @task.user_id
+  tr
     th = Task.human_attribute_name(:description)
     td = simple_format(h(@task.description), {}, sanitize: false, wrapper_tag: "div")
   tr
