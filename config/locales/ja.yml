@@ -10,12 +10,12 @@ ja:
                task: タスク
           attributes:
                task:
-               id: ID
-               name: 名称
-               description: 詳しい説明
-               created_at: 登録日時
-               updated_at: 更新日時
-               user_id: ユーザID
+                 id: ID
+                 name: 名称
+                 description: 詳しい説明
+                 created_at: 登録日時
+                 updated_at: 更新日時
+                 user_id: ユーザID
 
                user:
                  name: 名前
