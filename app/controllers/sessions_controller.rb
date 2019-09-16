@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: session_params[:email]) #Search users by sending email address
 
-    if user&.authenticate(session_params[:password])
+    if user&.authenticate(session_params[:password]) #Perform password authentication for authenticate method
       session[:user_id] = user.id
       redirect_to_root_url, notice:'ログインしました。'
     else
