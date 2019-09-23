@@ -14,14 +14,14 @@ describe 'タスク管理機能', type: :system do
     end
 
     context 'ユーザAがログインしているとき' do
-      let{:login_user} { user_a }
+      let(:login_user) { user_a }
       it 'ユーザAが作成タスクが表示される' do
         expect(page).to have_content '最初のタスク'
       end
     end
 
     context 'ユーザBがログインしているとき' do
-      let{:login_user} { user_b }
+      let(:login_user) { user_b }
       it 'ユーザAが作成したタスクが表示されない' do
         expect(page).to have_no_content '最初のタスク'
       end
