@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(session_params[:password]) #Perform password authentication for authenticate method
       session[:user_id] = user.id
-      redirect_to_root_url, notice:'ログインしました。'
+      redirect_to root_url, notice: 'ログインしました。'
     else
       render :new
     end

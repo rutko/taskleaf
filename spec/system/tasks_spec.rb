@@ -5,9 +5,8 @@ describe 'タスク管理機能', type: :system do
     let(:user_a) { FactoryBot.create(:user, name: 'ユーザA', email: 'a@example.com') }
     let(:user_b) { FactoryBot.create(:user, name: 'ユーザB', email: 'b@example.com') }
     let(:task_a) { FactroyBot.create(:task, name: '最初のタスク', user: user_a) }
+
     before do
-      user_a = FactoryBot.create(:user, name: 'ユーザA', email: 'a@example.com')
-      FactoryBot.create(:task, name: '最初のタスク', user: user_a)
       visit login_path
       fill_in 'メールアドレス', with: login_user.email
       fill_in 'パスワード', wtih: login_user.password
