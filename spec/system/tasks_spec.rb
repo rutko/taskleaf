@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'タスク管理機能', type: :system do
   describe '一覧表示機能' do
-    let(:user_a) { create(:user, name: 'ユーザA', email: 'a@example.com') }
+    let(:user_a) { create(:user, name: 'ユーザA', email: 'a@example.com', ) }
     let(:user_b) { create(:user, name: 'ユーザB', email: 'b@example.com') }
     let(:task_a) { create(:task, name: '最初のタスク', user: user_a) }
     let(:task_b) { create(:task, name: '最初のタスク', user: user_b) }
