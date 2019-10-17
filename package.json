@@ -3,5 +3,27 @@
   "private": true,
   "dependencies": {
     "passport": "^0.4.0"
-  }
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutko/taskleaf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rutko/taskleaf/issues"
+  },
+  "homepage": "https://github.com/rutko/taskleaf#readme"
 }
