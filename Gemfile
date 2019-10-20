@@ -74,3 +74,7 @@ gem 'sidekiq'
 
 # draper
 gem 'draper'
+
+# materialize
+gem 'materialize-sass', '~> 1.0.0'
+gem 'material_icons'
