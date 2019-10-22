@@ -2,11 +2,12 @@ doctype html
 html
   head
     title
-      | 作業通話ちゃんねる
+      | インターネットご近所クラブ
     = csrf_meta_tags
     = csp_meta_tag
   body
-    .title
+    h1.header-logo-link-outer
+    div.header-logo
     = link_to'/',class: 'img' do
       = image_tag "logo.png"
       span
